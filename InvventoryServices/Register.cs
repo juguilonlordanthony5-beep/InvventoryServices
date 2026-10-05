@@ -83,5 +83,11 @@ namespace InvventoryServices
         {
             // no-op
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Close register form to return to login form
+            this.Close();
+        }
     }
 }

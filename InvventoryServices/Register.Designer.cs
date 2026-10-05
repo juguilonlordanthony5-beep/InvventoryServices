@@ -29,19 +29,24 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            pictureBox1 = new PictureBox();
+            button2 = new Button();
+            label3 = new Label();
+            textBox3 = new TextBox();
             button1 = new Button();
             label2 = new Label();
             label1 = new Label();
             textBox2 = new TextBox();
             textBox1 = new TextBox();
-            textBox3 = new TextBox();
-            label3 = new Label();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
             // 
-            groupBox1.BackColor = Color.White;
+            groupBox1.BackColor = Color.Gainsboro;
+            groupBox1.Controls.Add(pictureBox1);
+            groupBox1.Controls.Add(button2);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(textBox3);
             groupBox1.Controls.Add(button1);
@@ -54,6 +59,44 @@
             groupBox1.Size = new Size(577, 732);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.logo__2_;
+            pictureBox1.Location = new Point(216, 39);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(145, 109);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 8;
+            pictureBox1.TabStop = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.LightSteelBlue;
+            button2.ForeColor = SystemColors.ActiveCaptionText;
+            button2.Location = new Point(107, 589);
+            button2.Name = "button2";
+            button2.Size = new Size(374, 62);
+            button2.TabIndex = 7;
+            button2.Text = "Back";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(107, 177);
+            label3.Name = "label3";
+            label3.Size = new Size(59, 25);
+            label3.TabIndex = 6;
+            label3.Text = "Name";
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(107, 449);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(378, 31);
+            textBox3.TabIndex = 5;
             // 
             // button1
             // 
@@ -99,22 +142,6 @@
             textBox1.Size = new Size(378, 31);
             textBox1.TabIndex = 0;
             // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(107, 449);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(378, 31);
-            textBox3.TabIndex = 5;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(107, 177);
-            label3.Name = "label3";
-            label3.Size = new Size(59, 25);
-            label3.TabIndex = 6;
-            label3.Text = "Name";
-            // 
             // Register
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -127,6 +154,7 @@
             Text = "Register";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -140,5 +168,7 @@
         private TextBox textBox1;
         private TextBox textBox3;
         private Label label3;
+        private Button button2;
+        private PictureBox pictureBox1;
     }
 }

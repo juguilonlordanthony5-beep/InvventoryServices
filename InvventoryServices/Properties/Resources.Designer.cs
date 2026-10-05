@@ -73,6 +73,46 @@ namespace InvventoryServices.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap adjust__2_ {
+            get {
+                object obj = ResourceManager.GetObject("adjust (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Alerts__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Alerts (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap box__2_ {
+            get {
+                object obj = ResourceManager.GetObject("box (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download {
+            get {
+                object obj = ResourceManager.GetObject("download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo__2_ {
             get {
                 object obj = ResourceManager.GetObject("logo (2)", resourceCulture);
@@ -86,6 +126,16 @@ namespace InvventoryServices.Properties {
         internal static System.Drawing.Bitmap logo__2_1 {
             get {
                 object obj = ResourceManager.GetObject("logo (2)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap recent__2_ {
+            get {
+                object obj = ResourceManager.GetObject("recent (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

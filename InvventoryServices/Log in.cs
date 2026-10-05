@@ -3,7 +3,7 @@ using Microsoft.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace InvventoryServices
-{
+{       
     public partial class Form1 : Form
     {
         // Keep this in sync with Register connection string or move to a shared location.
@@ -60,7 +60,7 @@ namespace InvventoryServices
                 var verified = PasswordHelper.Verify(password, salt, hash);
                 if (verified)
                 {
-                    var dashboard = new Dashboard { StartPosition = FormStartPosition.CenterScreen };
+                    var dashboard = new DashB(email) { StartPosition = FormStartPosition.CenterScreen };
                     dashboard.FormClosed += (s, args) => Show();
                     Hide();
                     dashboard.Show();
@@ -79,8 +79,13 @@ namespace InvventoryServices
                 MessageBox.Show($"Unexpected error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        // Note: login is handled by Button1_Click which uses the named designer controls
     }
 }
+
+
+
+
 
 
 
