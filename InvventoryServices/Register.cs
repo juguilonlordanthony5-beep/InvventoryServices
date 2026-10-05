@@ -6,8 +6,6 @@ namespace InvventoryServices
 {
     public partial class Register : Form
     {
-        // Keep this in sync with Form1 connection string or move to a shared location.
-        private const string connectionString = @"Data Source=ACER-SWIFT3\SQLEXPRESS;Initial Catalog=InventoryDb;Integrated Security=True;TrustServerCertificate=True;";
         public Register()
         {
             InitializeComponent();
@@ -33,7 +31,7 @@ namespace InvventoryServices
 
             try
             {
-                using var conn = new SqlConnection(connectionString);
+                using var conn = DatabaseService.CreateConnection();
                 await conn.OpenAsync();
 
                 // Check email existence

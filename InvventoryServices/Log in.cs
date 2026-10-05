@@ -6,8 +6,6 @@ namespace InvventoryServices
 {       
     public partial class Form1 : Form
     {
-        // Keep this in sync with Register connection string or move to a shared location.
-        private const string connectionString = @"Data Source=ACER-SWIFT3\SQLEXPRESS;Initial Catalog=InventoryDb;Integrated Security=True;TrustServerCertificate=True;";
 
 
         public Form1()
@@ -41,7 +39,7 @@ namespace InvventoryServices
 
             try
             {
-                using var conn = new SqlConnection(connectionString);
+                using var conn = DatabaseService.CreateConnection();
                 await conn.OpenAsync();
 
                 using var cmd = new SqlCommand("SELECT PasswordHash, PasswordSalt FROM dbo.Users WHERE Email = @email", conn);

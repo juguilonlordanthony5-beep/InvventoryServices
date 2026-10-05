@@ -1,5 +1,4 @@
 using System;
-using System;
 using System.Threading.Tasks;
 using Microsoft.Data.SqlClient;
 
@@ -11,7 +10,7 @@ namespace InvventoryServices
 
         // Local development connection string.
         private const string DefaultConnectionString =
-            @"Data Source=ACER-SWIFT3\SQLEXPRESS;Initial Catalog=InventoryDb;Integrated Security=True;TrustServerCertificate=True;";
+            @"Data Source=.\SQLEXPRESS;Initial Catalog=InvventoryServicesDB;Integrated Security=True;TrustServerCertificate=True;";
 
         /// <summary>
         /// Gets the database connection string from the environment variable.
